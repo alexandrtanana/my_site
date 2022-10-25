@@ -1,3 +1,52 @@
+
+.social__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #bdff00;
+}
+
 .social__list {
   display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.social__list-item-linkedin,
+.social__list-item-telegram,
+.social__list-item-vk {
+  width: 30px;
+  height: 30px;
+  fill: #fff;
+}
+
+.social__list-item-linkedin:hover {
+  fill: #0077b5;
+}
+
+.social__list-item-telegram:hover {
+  fill: #0088cc;
+}
+
+.social__list-item-vk:hover {
+  fill: #4680C2;
+}
+
+.social__mail {
+  display: flex;
+  flex-direction: column;
+}
+
+.social__mail-link {
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 13px;
+}
+
+.social__mail-link:hover {
+  color:#bdff00;
 }

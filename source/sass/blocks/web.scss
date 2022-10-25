@@ -1,9 +1,18 @@
+.web {
+  max-width: 1920px;
+  margin: 0 auto;
+
+
+}
+
 .web-container {
   display: flex;
   justify-content: space-between;
   background-color: #2D2D2D;
   padding-left: 70px;
   padding-right: 70px;
+
+
 }
 
 .web__developer {
@@ -24,28 +33,94 @@
   text-transform: uppercase;
 }
 
+
+.glitch {
+
+ color: #BDFF00;
+ animation: glitch 0.7s linear infinite;
+}
+
+@keyframes glitch {
+ 0%, 100% {
+     text-shadow: -2.5px -2.5px 0 #fff,
+                     2.5px 2.5px 0 #ff8800;
+ }
+ 25% {
+     text-shadow: 2.5px 2.5px 0 #ffe100,
+                     -2.5px -2.5px 0 rgb(255, 255, 255);
+ }
+ 50% {
+     text-shadow: 2.5px -2.5px 0 #ffffff,
+                     -2.5px 2.5px 0 #ff8800;
+ }
+ 75% {
+     text-shadow: 2.5px 2.5px 0 #ffe100,
+                     2.5px -2.5px 0 rgb(255, 255, 255);
+ }
+}
+
 .web__developer-blockquote {
   font-weight: 400;
   font-size: 17px;
   line-height: 32px;
 }
 
+.main-background {
+  background-image: url("..//img/bottom.svg");
+  width: auto;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: flex;
+
+}
+
 .web__developer-button {
+
+  // font-weight: 700;
+  // font-size: 30px;
+  // line-height: 62px;
+  // text-transform: uppercase;
+  // background: #BDFF00;
+  // border-radius: 25px;
+  // margin-top: 80px;
+  // margin-bottom: 150px;
+  // padding-top: 10px;
+  // padding-bottom: 10px;
+  // padding-left: 100px;
+  // padding-right: 100px;
+  // cursor: pointer;
+  // border: none;
+
+
+  border: 0;
+  background: #BDFF00;
+  border-radius: 25px;
+  box-shadow: 0 5px 0 #00000052;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
   font-weight: 700;
   font-size: 30px;
   line-height: 62px;
-  text-transform: uppercase;
-  background: #BDFF00;
-  border-radius: 25px;
   margin-top: 80px;
   margin-bottom: 150px;
+  outline: 0;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 100px;
   padding-right: 100px;
-  cursor: pointer;
+  transition: all .1s linear;
+  text-transform: uppercase;
 }
 
-.web__svg {
-  width: 100%;
+.web__developer-button:active {
+  box-shadow: 0 2px 0 #000000;
+  transform: translateY(3px);
 }
+
+// .web__svg {
+//   width: 100%;
+//   background-color: #3D3D3D;
+//   display: flex;
+// }

@@ -1,0 +1,46 @@
+.copyright {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.copyright__text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #bdff00;
+}
+
+.copyright__copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__copyright-svg {
+  width: 50px;
+  height: 50px;
+}
+
+.copyright__copyright-link {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 13px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright__copyright-link:hover {
+  color:#bdff00;
+}
+
+.copyright-name-link{
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 13px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.copyright-name-link:hover {
+  color:#bdff00;
+}

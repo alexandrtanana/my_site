@@ -1,22 +1,19 @@
 .studies {
-  background-color: #5B5C5C;
-  // clip-path: polygon(100% 0, 100% 80%, 0 100%, 0 20%);
-  padding-top: 130px;
-  padding-bottom: 130px;
+  margin-top: 50px;
+  margin-right: 70px;
+  margin-left: 70px;
 }
 
 .studies-studies {
   display: flex;
-  justify-content:center;
-  padding-left: 70px;
-  padding-right: 70px;
-
-  // margin-top: 130px;
-  // margin-bottom: 130px;
+  justify-content: center;
   max-width: 1920px;
-  margin:  0 auto;
+  padding-right: 70px;
+  padding-left: 70px;
+  margin: 0 auto;
+  background-color: #3d3d3dc5;
+  border-radius: 50px;
 }
-
 
 .studies-wraper {
   display: flex;
@@ -25,25 +22,25 @@
 }
 
 .studies__my-photo {
-  box-shadow: 10px 10px 20px 5px rgba(0,0,0,0.5);
+  box-shadow: 10px 10px 20px 5px #00000080;
 }
 
 .studies__my-photo:hover {
-  box-shadow: 15px 15px 25px 5px rgba(0,0,0,0.5);
+  box-shadow: 15px 15px 25px 5px #00000080;
 }
 
 .studies__university {
-  width: 472px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  width: 472px;
   margin-left: 90px;
 }
 
 .studies__university-psu {
   display: flex;
   align-items: center;
-  font-weight: 400;
   font-size: 30px;
+  font-weight: 400;
   line-height: 40px;
 }

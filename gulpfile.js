@@ -65,7 +65,7 @@ const html = () => {
 
 const htmlLint = () => {
     return gulp.src('source/*.html')
-        .pipe(w3cjs())
+        .pipe(w3cjs());
 };
 
 exports.htmlLint = htmlLint;
@@ -133,10 +133,12 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/css/*.css",
-    "source/js/script.min.js",
+    "source/js/*.js",
     "source/*.ico",
     "source/img/**/*",
-    "!source/img/icons/*.svg",
+    "source/img/icons/*.svg",
+    "source/audio/**/*",
+    "source/favicon/**/*"
   ], {
     base: "source"
   })

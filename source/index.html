@@ -9,14 +9,16 @@
   <!-- <meta name="description" content="описание сайта для поисковых систем">
   <meta name="Keywords" content="HTML, META, метатег, тег, поисковая система, КЛЮЧЕВЫЕ, СЛОВА"> -->
   <title>Alexandr Tanana</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="favicon/icon.png" type="image/png">
   <link rel="apple-touch-icon" href="favicon/icon.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
-<body class="body">
+<body class="body animate">
   <!-- Лого -->
   <svg display="none">
     <defs>
@@ -65,7 +67,7 @@
     </defs>
   </svg>
 
-  <header class="header ">
+  <header class="header  ">
     <div class="nav">
       <div class="nav__logo">
         <svg width="182" height="24" viewBox="0 0 182 24" xmlns="http://www.w3.org/2000/svg" version="1.1"
@@ -81,12 +83,12 @@
       </ul>
     </div>
   </header>
-  <main class="main">
+  <main class="main ">
     <div class="web">
       <div class="web-container">
         <div class="web__developer">
           <h1 class="web__developer-text">Привет!Меня зовут Александр, я веб разработчик!</h1>
-          <p class="web__developer-designer glitch">Web developer/Designer</p>
+          <p class="web__developer-designer">Web developer/Designer</p>
           <blockquote class="web__developer-blockquote blockquote-animation">Если действительно хотите сделать карьеру,
             забудьте слово
             «быстрее». Быстро можно стать только
@@ -98,7 +100,7 @@
         </div>
       </div>
     </div>
-    <div class="academy">
+    <div data-wow-duration="1s" data-wow-delay="0.5s" class="academy animate__animated wow animate__fadeInLeft">
       <div class="academy-container">
         <div class="academy__html">
           <!-- <div class="academy__html-text"> -->
@@ -132,9 +134,8 @@
           </div>
         </div>
       </div>
-
     </div>
-    <div class="studies">
+    <div data-wow-duration="1s" data-wow-delay="0.5s" class="studies animate__animated wow animate__fadeInRight ">
       <div class="studies-studies">
         <div class="studies-wraper">
           <a class="studies-link" href="https://old.psu.by/fakultety/fit" target="_blank"
@@ -148,63 +149,57 @@
         </div>
       </div>
     </div>
-    <div class="tools">
-      <div class="tools-container">
-        <p class="tools__text">В своих работах применяю:</p>
-        <div class="tools__carousel">
-          <svg class="tools__right" viewBox="0 0 5 9">
-            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
-          </svg>
-          <div class="tools__carousel-tool">
-            <div class="tools__carousel-tool-tool">
-              <img class="tools__carousel-img" src="img/icon/html5.svg" alt="HTML" title="HTML 5">
-              <p class="tools__carousel-text">Применяется для для структурирования и отображения веб-страницы и её
-                контента</p>
-            </div>
-            <div class="tools__carousel-tool-tool">
-              <img class="tools__carousel-img" src="img/icon/css3.svg" alt="CSS" title="CSS 3">
-              <p class="tools__carousel-text">Создание цветов, шрифтов, расположения отдельных блоков и других аспектов
-                представления внешнего вида
-                этих веб-страниц.</p>
-            </div>
-            <div class="tools__carousel-tool-tool">
-              <img class=" tools__carousel-img" src="img/icon/javascript.svg" alt="JavaScript" title="Java Script">
-              <p class="tools__carousel-text">Язык программирования, который используют для написания frontend- и
-                backend-частей сайтов "оживления" web
-                страниц и приложений</p>
-            </div>
-            <div class="tools__carousel-tool-tool">
-              <img class=" tools__carousel-img" src="img/icon/php.svg" alt="PHP" title="PHP">
-              <p class="tools__carousel-text">Обработка данных форм, генерирация динамики страницы и отсылка и принятие
-                cookies.</p>
-            </div>
-            <div class="tools__carousel-tool-tool">
-              <img class=" tools__carousel-img" src="img/icon/wordpress.svg" alt="Wordpress" title="Wordpress">
-              <p class="tools__carousel-text">Cистема управления содержимым сайта с открытым исходным кодом; написана на
-                PHP; сервер базы данных —
-                MySQL</p>
-            </div>
-            <div class="tools__carousel-tool-tool">
-              <img class=" tools__carousel-img" src="img/icon/figma.svg" alt="Figma" title="Figma">
-              <p class="tools__carousel-text">Графический редактор для создания прототипов сайтов и приложений</p>
-            </div>
-            <div class="tools__carousel-tool-tool">
-              <img class=" tools__carousel-img" src="img/icon/adobe_photoshop_macos_bigsur_icon_190436.svg"
-                alt="Photoshop" title="Photoshop">
-              <p class="tools__carousel-text">Инструмент компьютерной графики, который используется для всех видов
-                коммерческой обработки медиа файлов,
-                так же длясоздания макетов web сайтов.</p>
-            </div>
-          </div>
-          <svg class="tools__left" viewBox="0 0 5 9">
-            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
-          </svg>
+    <div data-wow-duration="1s" data-wow-delay="0.5s"
+      class="swiper-container tools-container tools  animate__animated wow animate__fadeInLeft">
+      <div class="swiper-wrapper ">
+        <div class="swiper-slide tools__carousel-tool-tool"><img class="tools__carousel-img" src="img/icons/html5.svg"
+            alt="HTML" title="HTML 5">
+          <p class="tools__carousel-text">Применяется для для структурирования и отображения веб-страницы и её
+            контента</p>
+        </div>
+        <div class="swiper-slide tools__carousel-tool-tool"> <img class="tools__carousel-img" src="img/icons/css3.svg"
+            alt="CSS" title="CSS 3">
+          <p class="tools__carousel-text">Создание цветов, шрифтов, расположения отдельных блоков и других аспектов
+            представления внешнего вида
+            этих веб-страниц.</p>
+        </div>
+        <div class="swiper-slide tools__carousel-tool-tool"><img class=" tools__carousel-img"
+            src="img/icons/javascript.svg" alt="JavaScript" title="Java Script">
+          <p class="tools__carousel-text">Язык программирования, который используют для написания frontend- и
+            backend-частей сайтов "оживления" web
+            страниц и приложений</p>
+        </div>
+        <div class="swiper-slide tools__carousel-tool-tool"><img class=" tools__carousel-img" src="img/icons/php.svg"
+            alt="PHP" title="PHP">
+          <p class="tools__carousel-text">Обработка данных форм, генерирация динамики страницы и отсылка и принятие
+            cookies.</p>
+        </div>
+        <div class="swiper-slide tools__carousel-tool-tool"><img class=" tools__carousel-img"
+            src="img/icons/wordpress.svg" alt="Wordpress" title="Wordpress">
+          <p class="tools__carousel-text">Cистема управления содержимым сайта с открытым исходным кодом; написана на
+            PHP; сервер базы данных —
+            MySQL</p>
+        </div>
+        <div class="swiper-slide tools__carousel-tool-tool"><img class=" tools__carousel-img" src="img/icons/figma.svg"
+            alt="Figma" title="Figma">
+          <p class="tools__carousel-text">Графический редактор для создания прототипов сайтов и приложений</p>
+        </div>
+        <div class="swiper-slide tools__carousel-tool-tool"><img class=" tools__carousel-img"
+            src="img/icons/adobe_photoshop_macos_bigsur_icon_190436.svg" alt="Photoshop" title="Photoshop">
+          <p class="tools__carousel-text">Инструмент компьютерной графики, который используется для всех видов
+            коммерческой обработки медиа файлов,
+            так же длясоздания макетов web сайтов.</p>
         </div>
       </div>
+      <div class="swiper-pagination tools-container-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
-    <iframe class="map"
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86899.60397967385!2d27.518210865024557!3d53.905764108034305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc92ce2c608c5%3A0xe7e57a53d3669a58!2z0YPQuy4g0JPQuNC90YLQvtCy0YLQsCA10LAsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1666206835348!5m2!1sru!2sby"
-      style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div>
+      <iframe class="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86899.60397967385!2d27.518210865024557!3d53.905764108034305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc92ce2c608c5%3A0xe7e57a53d3669a58!2z0YPQuy4g0JPQuNC90YLQvtCy0YLQsCA10LAsINCc0LjQvdGB0Lo!5e0!3m2!1sru!2sby!4v1666206835348!5m2!1sru!2sby"
+        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer-container">
@@ -235,7 +230,7 @@
         </div>
       </div>
       <div class="footer-logo">
-        <img src="img/icon/footer-logo.svg" width="100" height="170" alt="логотип">
+        <img class="footer-logo-img" src="img/icons/footer-logo.svg" alt="логотип">
       </div>
       <div class="copyright">
         <p class="copyright__text">Разработал</p>
@@ -268,6 +263,14 @@
     </div>
   </footer>
   <script src="js/script.min.js"></script>
+  <script src="js/ScrollTrigger.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="..//js/swiper.js"></script>
+
 </body>
 
 </html>

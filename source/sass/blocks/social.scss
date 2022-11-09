@@ -1,7 +1,6 @@
-
 .social__text {
-  font-weight: 400;
   font-size: 18px;
+  font-weight: 400;
   line-height: 29px;
   color: #bdff00;
 }
@@ -26,11 +25,11 @@
 }
 
 .social__list-item-telegram:hover {
-  fill: #0088cc;
+  fill: #08c;
 }
 
 .social__list-item-vk:hover {
-  fill: #4680C2;
+  fill: #4680c2;
 }
 
 .social__mail {
@@ -39,14 +38,14 @@
 }
 
 .social__mail-link {
-  text-decoration: none;
-  color: #fff;
   margin-bottom: 10px;
-  font-weight: 400;
   font-size: 15px;
+  font-weight: 400;
   line-height: 13px;
+  color: #fff;
+  text-decoration: none;
 }
 
 .social__mail-link:hover {
-  color:#bdff00;
+  color: #bdff00;
 }

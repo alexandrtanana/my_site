@@ -1,31 +1,34 @@
 .tools {
-  background-color: #3d3d3d;
+  margin-right: 70px;
+  margin-left: 70px;
 }
 
 .tools-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-left: 70px;
-  padding-right: 70px;
-  max-width: 1920px;
+  padding-bottom: 70px;
   margin: 0 auto;
-  padding-bottom: 170px;
-  background-color: #3d3d3d;
-  padding-top: 170px;
+  margin-top: 50px;
+  margin-right: 70px;
+  margin-bottom: 50px;
+  margin-left: 70px;
+  overflow: hidden;
+  background-color: #3d3d3dc5;
+  border-radius: 50px;
 }
 
 .tools__left {
-  fill: #fff;
   width: 64px;
   height: 64px;
-
+  fill: #fff;
 }
 
 .tools__right {
-  fill: #fff;
   width: 64px;
   height: 64px;
+  fill: #fff;
   transform: rotate(180deg);
 }
 
@@ -35,45 +38,43 @@
 }
 
 .tools__text {
-  font-weight: 400;
   font-size: 32px;
+  font-weight: 400;
   line-height: 83px;
 }
 
 .tools__carousel {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   margin-top: 50px;
-  width: 100%;
-  align-items: center;
+  transform: 0;
 }
 
 .tools__carousel-tool {
   display: flex;
-  width: 100% ;
   justify-content: space-around;
+  width: 100%;
 }
 
 .tools__carousel-tool-tool {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 150px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 65px;
   background-color: #5b5c5c;
-  border-radius: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin: 5px;
-  // margin-left: 10px;
-  // margin-right: 10px;
+  border-radius: 75px;
+}
+
+.tools-container-pagination {
+  opacity: var(#bdff00);
 }
 
 .tools__carousel-text {
-  text-align: center;
   margin-top: 16px;
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
   line-height: 17px;
+  text-align: center;
 }

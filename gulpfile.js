@@ -6,7 +6,7 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 const gulpStylelint = require("gulp-stylelint");
-const w3cjs = require("gulp-w3cjs");
+const htmllint = require("gulp-htmllint");
 const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
@@ -26,7 +26,7 @@ const styles = () => {
       {formatter: 'string', console: true}
     ]
   }))
-  // .pipe(plumber())
+  .pipe(plumber())
   .pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([
@@ -65,8 +65,8 @@ const html = () => {
 
 const htmlLint = () => {
     return gulp.src('source/*.html')
-        .pipe(w3cjs());
-};
+    .pipe(htmllint());
+}
 
 exports.htmlLint = htmlLint;
 
@@ -131,14 +131,14 @@ exports.sprite = sprite;
 
 const copy = (done) => {
   gulp.src([
-    "source/fonts/*.{woff2,woff}",
+    "source/fonts/*.{woff2,woff,ttf}",
     "source/css/*.css",
-    "source/js/*.js",
+    "source/js/*js",
     "source/*.ico",
     "source/img/**/*",
     "source/img/icons/*.svg",
-    "source/audio/**/*",
-    "source/favicon/**/*"
+    "source/fawicon.ico",
+    "source/favicon/*",
   ], {
     base: "source"
   })

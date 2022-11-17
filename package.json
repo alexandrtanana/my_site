@@ -6,7 +6,7 @@
   "scripts": {
     "gulp": "gulp",
     "gulp cssLint": "gulp-stylelint",
-    "gulp htmlLint": "w3cjs",
+    "gulp htmlLint": "gulp-htmllint",
     "test": "gulp cssLint && gulp htmlLint"
   },
   "keywords": [
@@ -19,6 +19,7 @@
     "browser-sync": "^2.27.7",
     "del": "^6.0.0",
     "gulp": "^4.0.2",
+    "gulp-htmllint": "0.0.19",
     "gulp-htmlmin": "^5.0.1",
     "gulp-libsquoosh": "^1.0.12",
     "gulp-plumber": "^1.2.1",
@@ -37,5 +38,6 @@
     "stylelint-config-recess-order": "^3.0.0",
     "stylelint-config-standard": "^25.0.0",
     "stylelint-config-standard-scss": "^3.0.0"
-  }
+  },
+  "dependencies": {}
 }

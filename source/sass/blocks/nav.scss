@@ -1,25 +1,31 @@
 .nav {
-  display: flex ;
+  display: flex;
   justify-content: space-between;
 }
 
 .nav__list {
-  display: flex ;
-  width: 500px;
+  display: flex;
   justify-content: space-between;
+  width: 500px;
   margin-left: 50px;
 }
 
-
-
 .nav__list-item-link {
-  font-weight: 400;
   font-size: 15px;
+  font-weight: 400;
   line-height: 27px;
-  text-transform: uppercase;
-  text-decoration: none;
   color: #fff;
+  text-decoration: none;
+  text-shadow: -2px 5px 5px #00000087;
+  text-transform: uppercase;
 }
 
+.nav__list-item-link:hover {
+  color: #bdff00;
+  border-bottom: 2px solid #bdff00;
+}
 
-
+.nav__player {
+  width: 300px;
+  height: auto;
+}

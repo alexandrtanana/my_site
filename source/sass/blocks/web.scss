@@ -1,9 +1,14 @@
+.web {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
 .web-container {
   display: flex;
   justify-content: space-between;
-  background-color: #2D2D2D;
-  padding-left: 70px;
   padding-right: 70px;
+  padding-left: 70px;
+  background-color: #2d2d2d;
 }
 
 .web__developer {
@@ -11,41 +16,76 @@
 }
 
 .web__developer-text {
-  font-weight: 300;
   font-size: 40px;
+  font-weight: 300;
   line-height: 52px;
 }
 
 .web__developer-designer {
+  margin: 0 auto;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 44px;
   font-weight: 400;
-  font-size: 40px;
   line-height: 78px;
-  color: #BDFF00;
+  color: #bdff00;
   text-transform: uppercase;
+  white-space: nowrap;
+  border-right: .11em solid #fff;
+  animation:
+    typing 2s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from,
+  to { border-color: transparent; }
+  50% { border-color: #fff; }
 }
 
 .web__developer-blockquote {
-  font-weight: 400;
   font-size: 17px;
+  font-weight: 400;
   line-height: 32px;
 }
 
-.web__developer-button {
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 62px;
-  text-transform: uppercase;
-  background: #BDFF00;
-  border-radius: 25px;
-  margin-top: 80px;
-  margin-bottom: 150px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 100px;
-  padding-right: 100px;
-  cursor: pointer;
+.main-background {
+  display: flex;
+  width: auto;
+  height: auto;
+  background-image: url("..//img/bottom.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-.web__svg {
-  width: 100%;
+.web__developer-button {
+  padding-top: 10px;
+  padding-right: 100px;
+  padding-bottom: 10px;
+  padding-left: 100px;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 62px;
+  color: #000;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #bdff00;
+  border: 0;
+  border-radius: 25px;
+  outline: 0;
+  box-shadow: 0 5px 0 #00000052;
+  transition: all .1s linear;
+}
+
+.web__developer-button:active {
+  box-shadow: 0 2px 0 #000;
+  transform: translateY(3px);
 }

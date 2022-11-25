@@ -26,7 +26,7 @@ const styles = () => {
       {formatter: 'string', console: true}
     ]
   }))
-  // .pipe(plumber())
+  .pipe(plumber())
   .pipe(sourcemap.init())
   .pipe(sass())
   .pipe(postcss([

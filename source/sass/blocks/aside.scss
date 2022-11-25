@@ -1,6 +1,123 @@
 .aside {
-  padding-left: 20px;
-  padding-right: 15px;
-  background-color: #C6D2D3;
+  padding-right: 25px;
+  padding-left: 30px;
+  background-color: #c6d2d3;
   border-radius: 20px 0 0 20px;
+}
+
+.aside__name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aside__name-name {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.aside__name-img {
+  width: 160px;
+  height: auto;
+  margin-top: 40px;
+  border-radius: 20px;
+}
+
+.aside__mail {
+  display: flex;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  margin-top: 16px;
+  border-top: 1px solid #000;
+}
+
+.aside__mail-div,
+.aside__socials-socials-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+.aside__mail-div-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 8px;
+  color: #818181;
+}
+
+.aside__socials,
+.aside__hobbies {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  padding-bottom: 13px;
+  border-top: 1px solid #000;
+}
+
+.aside__mail-div-text,
+.aside__socials-text,
+.aside__socials-socials-text,
+.aside__hobbies-text {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 8px;
+  color: #818181;
+}
+
+.aside__mail-svg,
+.aside__hobbies-hobbies-svg {
+  width: 30px;
+  height: 25px;
+}
+
+.aside__hobbies-hobbies-svg {
+  width: 30px;
+  height: 30px;
+}
+
+.aside__socials-socials,
+.aside__hobbies-hobbies {
+  display: flex;
+  margin-top: 25px;
+}
+
+.aside__socials-socials-svg {
+  width: 32px;
+  height: 32px;
+}
+
+.aside__socials-socials-link,
+.aside__mail-div-link {
+  margin-top: 4px;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 17px;
+  color: #47516b;
+  text-decoration: none;
+}
+
+.aside__socials-socials-link:hover {
+  font-weight: 600;
+  color: #000;
+}
+
+.aside__mail-div-link:hover {
+  color: #000;
+}
+
+.aside__hobbies-hobbies {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.aside__hobbies-hobbies-text {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 9px;
+  color: #47516b;
 }

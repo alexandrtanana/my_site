@@ -1,0 +1,91 @@
+.education {
+  margin-top: 50px;
+}
+
+.education-text {
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 16px;
+}
+
+.education-div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+
+.education-education {
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  background-color: #f7f9fc;
+  border-radius: 5px;
+  box-shadow: 8px 8px #0000004d;
+}
+
+.education-education:hover {
+  border-radius: 10px;
+  box-shadow: 10px 10px #0066;
+}
+
+.education-education:not(:last-child) {
+  margin-right: 5px;
+}
+
+.education-education-top {
+  display: flex;
+  align-items: center;
+}
+
+.education-education-svg {
+  width: 60px;
+  height: 70px;
+  fill: #302683;
+}
+
+.education-education-img {
+  width: 60px;
+  height: 70px;
+}
+
+.education-education-title {
+  margin-left: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #2e2e48;
+}
+
+.education-education-bottom {
+  margin-top: 5px;
+}
+
+.education-education-year:not(:last-child) {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #79819a;
+}
+
+.education-education-speciality {
+  max-width: 300px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 15px;
+  color: #2e2e48;
+}
+
+.education-education-speciality:not(:last-child) {
+  margin-top: 10px;
+}
+
+.education-education-link {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #000;
+  text-decoration: none;
+}
